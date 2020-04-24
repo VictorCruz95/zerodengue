@@ -2,14 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Form Denuncia</title>
-		<link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet">
-	</head>
-	<body>
-		
+	<body>		
 		<div class="form_" style="margin-left: 20px; height: 200px; width: 100%;">
 			<div class="form">
 				<h1>Realizar nova Denúncia</h1> </br>
@@ -101,9 +94,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</form>
 			</div>
 		</div>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 		
 	</body>
 </html>

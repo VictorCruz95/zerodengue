@@ -13,5 +13,10 @@ class Denuncia extends CI_Controller {
 	}
 
 	
+	public function insert()
+	{
+		$this->load->model('Denuncia_model');
+		// $this->Denuncia_model->inserir();
+	}
 
 }

@@ -1,25 +1,25 @@
-.nav{
+.nav {
 	font-size: 8vw;
 }
 
 .footer_ {
 	position: fixed;
-	bottom:0;
+	bottom: 0;
 	right: 0;
-	left:0;
-	width:100%;
+	left: 0;
+	width: 100%;
 	font-size: 10px;
 	text-align: center;
 	margin: 0;
-	align-content: center;	
+	align-content: center;
 }
 
-.form{
+.form {
 	width: 100%;
 	padding-bottom: 50px;
 }
 
-.box{
+.box {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -27,16 +27,15 @@
 	margin: auto;
 }
 
-.card{
+.card {
 	margin: 15px;
 	cursor: pointer;
 	border-radius: 15px;
 	padding: 5%;
 	flex: 1;
-
 }
 
-.card:hover{
+.card:hover {
 	opacity: 0.5;
 	-webkit-transition: opacity .15s ease-in-out;
 	-moz-transition: opacity .15s ease-in-out;
@@ -45,40 +44,36 @@
 	transition: opacity .15s ease-in-out;
 }
 
+input[type=text], input[type="password"], input[type="email"]{
+	font-size: 14px;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) {
-	
-	.form{
+@media (min-width:576px) {
+	.form {
 		width: 100%;
 		padding-bottom: 5%;
 	}
+
 }
 
 /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-	
-	.form{
-		width: 80%;
-		padding-bottom: 5%;
-	}
-
+@media (min-width:768px) {
 }
 
 /*Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) {
-	
-	.form{
-		width: 70%;
-		padding-bottom: 5%;
-	}
-
+@media (min-width:992px) {
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-
-	.form{
-		width: 50%;
+@media (min-width:1200px) {
+	.form {
+		width: 60%;
 		padding-bottom: 5%;
 	}
+
+	input[type=text], input[type="password"], input[type="email"]{
+		font-size: 16px;
+	}
+
 }

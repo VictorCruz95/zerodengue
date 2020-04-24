@@ -6,8 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<meta charset="utf-8">
 		<title>Header</title>
-		<link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
-		<link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">		
 	</head>
 	<body>
 		

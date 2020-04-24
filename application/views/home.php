@@ -5,7 +5,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<meta charset="utf-8">
 		<title>Zer@Dengue</title>
-		<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" >
+		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 	</head>
 	<body>
 		<?php

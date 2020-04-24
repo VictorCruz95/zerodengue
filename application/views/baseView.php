@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<title>View de Base</title>
-	<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">	
+	<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css">	
 </head>
 <body>
 	<div id="container">
