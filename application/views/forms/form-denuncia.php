@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<body>		
 		<div class="form_" style="margin-left: 20px; height: 200px; width: 100%;">
 			<div class="form">

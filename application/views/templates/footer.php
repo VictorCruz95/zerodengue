@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
-<html lang="en">	
+<html lang="pt-br">	
 	<body>		
 		<div class="footer_ bg-primary">
 			<footer>

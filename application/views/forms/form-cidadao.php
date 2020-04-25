@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<body>
 		<div style="margin-left: 20px; height: 200px; width: 100%;">
 			<div class="form">
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="rua" class="col-sm-2 col-form-label">Rua</label>
-							<input type="text" class="form-control" id="rua" id="rua" placeholder="">
+							<input type="text" class="form-control" id="rua" name="rua" placeholder="">
 						</div>
 					</div>
 					<div class="form-row">
@@ -82,8 +82,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<div class="form-group col-md-2">
 							<label for="uf" class="col-sm-2 col-form-label">UF</label>
-							<select class="form-control" id="uf" name="uf">
-								<option value="AC">Acre</option>
+							<select class="form-control select_" id="uf" name="uf">
+								<option class="select" value="AC">Acre</option>
 								<option value="AL">Alagoas</option>
 								<option value="AP">Amapá</option>
 								<option value="AM">Amazonas</option>

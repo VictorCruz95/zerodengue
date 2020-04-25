@@ -30,9 +30,9 @@ class Cidadao extends CI_Controller {
 
 	public function insert()
 	{
-		$data = $this->input->post();
 		$this->load->model('Cidadao_model');
-		$this->Cidadao_model->insert($data);
+		$this->Cidadao_model->insert();
+		$this->load->view('monitoramento');
 	
 	}
 

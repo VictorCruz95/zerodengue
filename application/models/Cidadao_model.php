@@ -3,21 +3,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Cidadao_model extends CI_Model {
 
-	private $id;
-	private $nome;
-	private $email;
-	private $senha;
-	private $rg;
-	private $cpf;
-	private $rua;
-	private $numero;
-	private $complemento;
-	private $bairro;
-	private $cidade ;
-	private $uf;
-	private $telefone ;
-	private $cep;
-	private $data_inclusao;
+	var $id_cidadao;
+	var $nome;
+	var $email;
+	var $senha;
+	var $rg;
+	var $cpf;
+	var $rua;
+	var $numero;
+	var $complemento;
+	var $bairro;
+	var $cidade ;
+	var $uf;
+	var $telefone ;
+	var $cep;
+	var $data_inclusao;
 
 	function __construct(){
 		parent::__construct();
@@ -35,25 +35,26 @@ class Cidadao_model extends CI_Model {
 	// 	return $query->result();
 	// }
 
-	public function insert($data){
-		  
-	  $this->id 		   = $data['id'];
-	  $this->nome 		   = $data['nome'];
-	  $this->email 		   = $data['email'];
-	  $this->senha 		   = $data['senha'];
-	  $this->rg 	       = $data['rg'];
-	  $this->cpf 		   = $data['cpf'];
-	  $this->rua 		   = $data['rua'];
-	  $this->numero 	   = $data['numero'];
-	  $this->complemento   = $data['complemento'];
-	  $this->bairro 	   = $data['bairro'];
-	  $this->cidade 	   = $data['cidade'];
-	  $this->uf 	   	   = $data['uf'];
-	  $this->telefone 	   = $data['telefone'];
-	  $this->cep 		   = $data['cep'];
+	public function insert(){
+		
+	  $post = $this->input->post();
+
+	  $this->nome 		   = $post['nome'];
+	  $this->email 		   = $post['email'];
+	  $this->senha 		   = $post['senha'];
+	  $this->rg 	       = $post['rg'];
+	  $this->cpf 		   = $post['cpf'];
+	  $this->rua 		   = $post['rua'];
+	  $this->numero 	   = $post['numero'];
+	  $this->complemento   = $post['complemento'];
+	  $this->bairro 	   = $post['bairro'];
+	  $this->cidade 	   = $post['cidade'];
+	  $this->uf 	   	   = $post['uf'];
+	  $this->telefone 	   = $post['telefone'];
+	  $this->cep 		   = $post['cep'];
 	  $this->data_inclusao = time();
 
-	  $builder->insert('cidadao', $data);	
+	  $this->db->insert('cidadao', $this);	
 
 	}
 
