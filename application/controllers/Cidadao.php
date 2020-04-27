@@ -14,31 +14,25 @@ class Cidadao extends CI_Controller {
 
 	public function getAll()
 	{
-		$this->load->model('Cidadao_model');
-		$data[records] = $this->Cidadao_model->getAll();
-
-		$this->load->view('cidadao', $data);
+		$this->load->model('Cidadao_model', 'cidadao');
+		$data["records"] = $this->cidadao->getAll();
 	}
 
 	public function getById()
 	{
-		$this->load->model('Cidadao_model');
-		$data[records] = $this->Cidadao_model->getById();
+		$this->load->model('Cidadao_model', 'cidadao');
+		$id = $this->uri->segment(3); // Pega o id informado na URI
+		$row = $this->cidadao->getById($id);
 
-		$this->load->view('cidadao', $data);
+		$this->load->view('cidadao', $row);
 	}
 
 	public function insert()
 	{
-		$this->load->model('Cidadao_model');
-		$this->Cidadao_model->insert();
+		$this->load->model('Cidadao_model', 'cidadao');
+		$this->cidadao->insert();
 		$this->load->view('monitoramento');
 	
-	}
-
-	public function delete()
-	{
-
-	}
+	}	
 	
 }	

@@ -23,17 +23,20 @@ class Cidadao_model extends CI_Model {
 		parent::__construct();
 	}
 
-	// public function getAll()
-	// {
-	// 	$query = $this->db->('cidadao');
-	// 	return $query->result();
-	// }
+	function getAll(){
+		$query = $this->db->get("cidadao");
+		return $query;
+	}
 
-	// public function getById()
-	// {
-	// 	$query = $this->db->('cidadao');
-	// 	return $query->result();
-	// }
+	function getById($id){
+		$query = $this->db->select("*");
+		$query = $this->db->from("cidadao");
+		$query = $this->db->where("id_cidadao", $id);
+		$query = $this->db->get()->row();
+
+		return $query;
+	}
+	
 
 	public function insert(){
 		

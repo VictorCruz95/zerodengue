@@ -11,9 +11,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body>
 		<?php
 			$dados['active_tab'] = 'home'; 
-			$this->load->view('templates/header', $dados); 
+			$this->load->view('components/templates/header', $dados); 
 		?>
-		
+
+		<br>
 		<div class="container">
 			<div class="jumbotron">
 				<h1 class="display-3">Faça a sua parte, Denuncie!</h1>
@@ -61,7 +62,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		
 		
-		<?php $this->load->view('templates/footer'); ?>
+		<?php $this->load->view('components/templates/footer'); ?>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
