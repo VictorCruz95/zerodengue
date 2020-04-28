@@ -3,9 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="pt-br">
 	<body>
-		<br>
-		<div class="container" style="align-content: center;">
-			<table class="table table-hover">
+		<div class="table-container">
+			<table class="table table-striped table-inverse table-hover">
 				<thead class="table-primary">
 					<tr>
 						<th>ID Denuncia</th>

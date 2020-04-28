@@ -2,10 +2,12 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="pt-br">
-	<body>		
-		<div class="form_" style="margin-left: 20px; height: 200px; width: 100%;">
+	<body>
+		<br>
+		<div class="" style="margin-left: 20px; height: 200px; width: 100%;">
 			<div class="form">
-				<h1>Realizar nova Denúncia</h1> </br>
+				<h1>Realizar nova Denúncia</h1>
+				<hr>
 				<form action="<?php echo base_url();?>index.php/Denuncia/insert" method="POST">
 					<div class="form-row">
 						<legend class="col-md-8">Endereço da Ocorrência</legend>

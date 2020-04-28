@@ -12,6 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<?php
 			$dados['active_tab'] = 'monitoramento';
 			$this->load->view('components/templates/header', $dados);
+			$this->load->view('components/forms/form-monitoramento');
 			$this->load->view('components/consulta-monitoramento');
 			$this->load->view('components/templates/footer');
 		?>

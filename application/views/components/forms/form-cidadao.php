@@ -3,9 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
 <html lang="pt-br">
 	<body>
+		<br>
 		<div style="margin-left: 20px; height: 200px; width: 100%;">
 			<div class="form">
-				<h1>Cadastro de Cidadão</h1></br>
+				<h1>Cadastro de Cidadão</h1><hr>
 				<form action="<?php echo base_url();?>index.php/Cidadao/insert" method="POST">
 					<div class="form-row">
 						<legend class="col-md-8">Dados Pessoais</legend>

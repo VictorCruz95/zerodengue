@@ -29,7 +29,7 @@ class Monitoramento_model extends CI_Model {
 		return $query;
 	}
 
-	function getById($id){
+	function getCustom($id){
 		$query = $this->db->select("*");
 		$query = $this->db->from("denuncia");
 		$query = $this->db->where("id_denuncia", $id);

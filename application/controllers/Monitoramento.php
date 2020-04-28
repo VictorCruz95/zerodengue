@@ -18,4 +18,12 @@ class Monitoramento extends CI_Controller {
 		$data["records"] = $this->monitoramento->getAll();
 		$this->load->view('monitoramento', $data);
 	}
+
+	public function consultar()
+	{
+		$this->load->model('Monitoramento_model', 'monitoramento');
+		$data["records"] = $this->monitoramento->getAll();
+		$this->load->view('monitoramento', $data);
+	}
+
 }
