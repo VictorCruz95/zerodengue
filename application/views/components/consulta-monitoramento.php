@@ -17,6 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<th>UF</th>
 						<th>Status</th>
 						<th>Data</th>
+						<th>Imagem</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -35,6 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<td><?php echo $row->uf; ?></td>
 						<td><?php echo $row->status_denuncia; ?></td>
 						<td><?php echo $row->data_denuncia; ?></td>
+						<td></td>
 					</tr>
 					<?php
 					}
@@ -42,7 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					else{
 					?>
 					<tr>
-						<td colspan="6">A consulta não retornou registros.</td>
+						<td colspan="11">A consulta não retornou registros.</td>
 					</tr>
 					<?php
 					}

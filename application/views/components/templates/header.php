@@ -6,7 +6,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<head>
 		<meta charset="utf-8">
 		<title>Header</title>
-		<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">		
+		<link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">	
+		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">	
 	</head>
 	<body>
 		
@@ -28,6 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</li>
 					<li  <?php if($active_tab == 'monitoramento') { ?> class="nav-item active" <?php } else { ?> class="nav-item" <?php } ?>>
 						<a class="nav-link" href="<?php echo base_url(); ?>index.php/Monitoramento/">Monitoramento de Denúncias</a>
+					</li>
+					<li  <?php if($active_tab == 'login') { ?> class="nav-item active" <?php } else { ?> class="nav-item" <?php } ?>>
+						<a class="nav-link" href="<?php echo base_url(); ?>index.php/Login/">Login</a>
 					</li>
 				</ul>
 				

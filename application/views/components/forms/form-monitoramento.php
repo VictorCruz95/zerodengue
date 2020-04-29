@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="container">
 			<h1 style="text-align: center">Colsulta Situação de Denúncias</h1><hr>
 			<div class="form form_">
-				<form action="<?php echo base_url();?>index.php/Monitoramento/" method="GET">
+				<form action="<?php echo base_url();?>index.php/Monitoramento/consultar" method="GET">
 					<div class="form-row">
 						<legend class="col-md-12">Dados Denúncia</legend>
 						<div class="form-group col-md-6">
