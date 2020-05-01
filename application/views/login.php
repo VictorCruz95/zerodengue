@@ -11,25 +11,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<body class="bg-primary">
 		<?php
 			$dados['active_tab'] = 'login';
-			// $this->load->view('components/templates/header', $dados);
 			$this->load->view('components/templates/footer');
 		?>
 		<div class="container">
 			<div class="div-login">
 				<div class="div-login-child">
-					<form>
+
+					<form action="<?php echo base_url();?>index.php/login" method="POST" >
 						<h2>
 							Entrar
 						</h2> <hr>
 						<div class="form-row">
 							<div class="form-group col-md-12" data-validate="Por favor digite o email">
-								<input class="form-control" type="text" name="username" placeholder="Email">
+								<input class="form-control" type="email" name="email" placeholder="Email">
 								<span class=""></span>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-12" data-validate = "Por favor digite a senha">
-								<input class="form-control" type="password" name="pass" placeholder="Senha">
+								<input class="form-control" type="password" name="senha" placeholder="Senha">
 								<span class="focus-input100"></span>
 							</div>
 						</div>
@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 						<div class="form-row">
 							<div class="form-group col-md-12">
-								<button class="btn btn-primary">
+								<button type="submit" class="btn btn-primary">
 								Entrar
 								</button>
 							</div>

@@ -21,7 +21,7 @@ class Cidadao extends CI_Controller {
 	public function getById()
 	{
 		$this->load->model('Cidadao_model', 'cidadao');
-		$id = $this->uri->segment(3); // Pega o id informado na URI
+		$id = $this->uri->segment(2); // Pega o id informado na URI
 		$row = $this->cidadao->getById($id);
 
 		$this->load->view('cidadao', $row);

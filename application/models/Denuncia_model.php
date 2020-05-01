@@ -33,31 +33,29 @@ class Denuncia_model extends CI_Model {
 		$query = $this->db->get()->row();
 
 		return $query;
-	}
-	
+	}	
 
 	public function insert(){
 		
-	  $post = $this->input->post();
+	  	$post = $this->input->post();
 
-	  $this->id_cidadao    = "1";
-	  $this->descricao 	   = $post['descricao'];
-	  $this->status 	   = "A";
-	  $this->rua 		   = $post['rua'];
-	  $this->numero 	   = $post['numero'];
-	  $this->complemento   = $post['complemento'];
-	  $this->bairro 	   = $post['bairro'];
-	  $this->cidade 	   = $post['cidade'];
-	  $this->uf 	   	   = $post['uf'];
-	  $this->cep 		   = $post['cep'];
-	  $this->data = time();
+		$this->id_cidadao  = "1";
+	  	$this->descricao   = $post['descricao'];
+	  	$this->status 	   = "A";
+	 	$this->rua 		   = $post['rua'];
+	  	$this->numero 	   = $post['numero'];
+	  	$this->complemento = $post['complemento'];
+	  	$this->bairro 	   = $post['bairro'];
+	  	$this->cidade 	   = $post['cidade'];
+	  	$this->uf 	   	   = $post['uf'];
+	  	$this->cep 		   = $post['cep'];
+	  	$this->data = time();
 
-	  $this->db->insert('denuncia', $this);	
+	  	$this->db->insert('denuncia', $this);	
+	  	$this->id_denuncia = $this->db->insert_id();	   	
+	  	
+	  	return $this->id_denuncia;	
 
 	}
-
-	// public function delete()
-	// {
-
-
+	
 }

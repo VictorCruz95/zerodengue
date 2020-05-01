@@ -7,41 +7,54 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="" style="margin-left: 20px; height: 200px; width: 100%;">
 			<div class="form">
 				<h1>Realizar nova Denúncia</h1>
-				<hr>
-				<form action="<?php echo base_url();?>index.php/Denuncia/insert" method="POST">
+				<hr>				
+				<!-- Mostra as mensagens de validação do form -->
+				<?php 
+				echo validation_errors(); 
+
+				if (!empty($mensagem)){
+					echo '<div class="alert alert-dismissible alert-danger">
+						  <button type="button" class="close" data-dismiss="alert">&times;</button>
+						  <p>' .$mensagem.'</p>
+						</div>';
+				}
+
+				?>
+
+				<form action="<?php echo base_url();?>index.php/Denuncia" method="POST" enctype="multipart/form-data">
 					<div class="form-row">
 						<legend class="col-md-8">Endereço da Ocorrência</legend>
 						<div class="form-group col-md-8">
 							<label for="rua" class="col-sm-2 col-form-label">Rua</label>
-							<input type="text" class="form-control" name="rua" placeholder="">
+							<input type="text" class="form-control text-uppercase" name="rua" value="<?php echo set_value('rua'); ?>">						
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-2">
 							<label for="numero" class="col-sm-2 col-form-label">Nº</label>
-							<input type="text" class="form-control" name="numero" placeholder="">
+							<input type="text" class="form-control text-uppercase" name="numero" value="<?php echo set_value('numero'); ?>">
 						</div>
 						
 						<div class="form-group col-md-6">
 							<label for="complemento" class="col-sm-2 col-form-label">Complemento</label>
-							<input type="text" class="form-control" name="complemento" size="30" placeholder="">
+							<input type="text" class="form-control text-uppercase" name="complemento" size="30" value="<?php echo set_value('complemento'); ?>">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
-							<input type="text" class="form-control" name="bairro" placeholder="">
+							<input type="text" class="form-control text-uppercase" name="bairro" value="<?php echo set_value('bairro'); ?>">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
-							<input type="text" class="form-control" name="cidade" placeholder="">
+							<input type="text" class="form-control text-uppercase" name="cidade" value="<?php echo set_value('cidade'); ?>">
 						</div>
 						
 						<div class="form-group col-md-2">
 							<label for="nome" class="col-sm-2 col-form-label">UF</label>
-							<select class="form-control" name="uf" style="font-size: 16px;">
+							<select class="form-control" name="uf" style="font-size: 16px;" value="<?php echo set_value('uf'); ?>">
 								<option value="AC">Acre</option>
 								<option value="AL">Alagoas</option>
 								<option value="AP">Amapá</option>
@@ -76,14 +89,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="cep" class="col-sm-2 col-form-label">CEP</label>
-							<input type="text" class="form-control" name="cep" placeholder="Seu CEP. Exemplo: 93800-000">
+							<input type="text" class="form-control" name="cep" placeholder="Seu CEP. Exemplo: 93800-000" value="<?php echo set_value('cep'); ?>">
 						</div>
 					</div>
 					</br>
 					<legend class="col-md-8">Informações Adicionais</legend>
 					<div class="form-group col-md-8">
 						<label for="descricao">Descrição da Denúncia</label>
-						<textarea class="form-control" name="descricao" rows="5"></textarea>
+						<textarea class="form-control text-uppercase" name="descricao" rows="2" value="<?php echo set_value('descricao'); ?>"></textarea>
 					</div>
 					
 					<div class="form-group col-md-8">

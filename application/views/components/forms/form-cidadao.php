@@ -12,13 +12,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<legend class="col-md-8">Dados Pessoais</legend>
 						<div class="form-group col-md-8">
 							<label for="nome"  class="col-sm-2 col-form-label">Nome</label>
-							<input type="text" class="form-control"name="nome" placeholder="Nome Completo" value="<?php echo (!empty($nome) ? $nome : ""); ?>">
+							<input type="text" class="form-control text-uppercase" name="nome" placeholder="Nome Completo" value="<?php echo (!empty($nome) ? $nome : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="email"  class="col-sm-2 col-form-label">Email</label>
-							<input type="email" class="form-control" name="email" placeholder="name@example.com" value="<?php echo (!empty($email) ? $email : ""); ?>">
+							<input type="email" class="form-control text-lowercase" name="email" placeholder="name@example.com" value="<?php echo (!empty($email) ? $email : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="rg" class="col-sm-2 col-form-label">RG</label>
-							<input type="text" class="form-control" name="rg" placeholder="Seu RG. Exemplo: 9999999999" value="<?php echo (!empty($rg) ? $rg : ""); ?>">
+							<input type="number" class="form-control" name="rg" placeholder="Seu RG. Exemplo: 9999999999" value="<?php echo (!empty($rg) ? $rg : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="rua" class="col-sm-2 col-form-label">Rua</label>
-							<input type="text" class="form-control" name="rua" placeholder="" value="<?php echo (!empty($rua) ? $rua : ""); ?>">
+							<input type="text" class="form-control text-uppercase" name="rua" placeholder="" value="<?php echo (!empty($rua) ? $rua : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
@@ -66,19 +66,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						
 						<div class="form-group col-md-6">
 							<label for="complemento" class="col-sm-2 col-form-label">Complemento</label>
-							<input type="text" class="form-control" name="complemento" size="30" placeholder="" value="<?php (!empty($complemento) ? $complemento : ""); ?>">
+							<input type="text" class="form-control text-uppercase" name="complemento" size="30" placeholder="" value="<?php (!empty($complemento) ? $complemento : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-8">
 							<label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
-							<input type="text" class="form-control"  name="bairro" placeholder="" value="<?php echo (!empty($bairro) ? $bairro : ""); ?>">
+							<input type="text" class="form-control text-uppercase"  name="bairro" placeholder="" value="<?php echo (!empty($bairro) ? $bairro : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-group col-md-6">
 							<label for="cidade" class="col-sm-2 col-form-label">Cidade</label>
-							<input type="text" class="form-control" name="cidade" placeholder="" value="<?php echo (!empty($cidade) ? $cidade : ""); ?>">
+							<input type="text" class="form-control text-uppercase" name="cidade" placeholder="" value="<?php echo (!empty($cidade) ? $cidade : ""); ?>">
 						</div>
 						
 						<div class="styled-select col-md-2">
