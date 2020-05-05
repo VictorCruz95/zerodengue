@@ -8,6 +8,8 @@ class Denuncia extends CI_Controller {
 	}
 
     var $msg;
+    var $imageName;
+    var $id_cidadao;
 
 	public function index()
 	{				
@@ -90,13 +92,16 @@ class Denuncia extends CI_Controller {
 
             if (!empty($id_denuncia)){
 
-				if (!$this->upload_imagem($id_denuncia)){
+				if (!$this->uploadImagem($id_denuncia)){
 					
 					$dados = array(
-						'mensagem' => $msg
+						'mensagem' => $this->msg
 					);	
 
 					$this->load->view('denuncia', $dados);					
+				}
+				else{
+					$this->setImagem($id_denuncia, $this->imageName);
 				}	
 
 			}
@@ -114,18 +119,19 @@ class Denuncia extends CI_Controller {
 
 	}	
 
-	public function upload_imagem($id_denuncia)
+	public function uploadImagem($id_denuncia)
 	{
 
 	  	if (!empty($_FILES)){
 
-	  		$imagem = $_FILES['imagem'];
+	  		$imagem = $_FILES['imagem'];	  		
+	  		$this->imageName = base_url().'imagens_denuncia/'.$id_denuncia.'.'.$this->getExtension($imagem['name']);
 
 		    if(file_exists($imagem['name']) || is_uploaded_file($imagem['tmp_name'])){
 
 		  		$configuracao = array(
 			  		'upload_path' => './imagens_denuncia/',
-			  		'allowed_types' => 'gif|jpg|png',
+			  		'allowed_types' => 'gif|jpg|jpeg|png',
 			  		'file_name'     => $id_denuncia,
 			  		'max_size'      => '2000'
 			  		);
@@ -137,7 +143,7 @@ class Denuncia extends CI_Controller {
 			     	return TRUE;
 			    }
 			 	else{
-			 		$msg = $this->upload->display_errors();			 		
+			 		$this->msg = $this->upload->display_errors();			 		
 			     	return FALSE;
 				 }	
 			}  
@@ -150,10 +156,22 @@ class Denuncia extends CI_Controller {
 	public function insert()
 	{
 		$this->load->model('Denuncia_model', 'denuncia');
-		$id_denuncia = $this->denuncia->insert();
+		$id_denuncia = $this->denuncia->insert($this->id_cidadao);
 		return $id_denuncia;
-	}		
-	
+	}	
+
+	function getExtension($imageName)
+	{
+		$partes = explode(".", $imageName);
+		return $partes[count($partes) -1];
+	}
+
+	public function setImagem($id_denuncia, $nomeImagem)	
+	{
+		$this->load->model('Denuncia_model', 'denuncia');
+		$this->denuncia->setImagem($id_denuncia, $nomeImagem);
+	}
+
 	public function getAll()
 	{
 		$this->load->model('Denuncia_model', 'denuncia');

@@ -14,14 +14,13 @@ div.footer_ {
 	align-content: center;
 }
 
-
 .form {
 	width: 100%;
 	padding-bottom: 50px;
 }
 
-div.form_{
-	width: 100%;	
+div.form_ {
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -41,6 +40,7 @@ div.form_ {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	opacity: 0.9;
 }
 
 .card {
@@ -60,6 +60,40 @@ div.form_ {
 	transition: opacity .15s ease-in-out;
 }
 
+.box a{
+	text-decoration: none;
+}
+
+.div-login {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	position: relative;
+	top: 200px;
+	width: 100%;
+	margin: 0px;
+}
+
+.div-login-child {
+	width: 50%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid #c9c9c9;
+	background-color: #ffffff;
+	border-radius: 2.5%;
+	-webkit-box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99);
+	-moz-box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99);
+	box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99);
+}
+
+.imagem {
+	height: 200px;
+	border: 1px none rgb(0, 0, 0);
+	width: 400px;
+}
+
 input[type=text],
 input[type="password"],
 input[type="email"]
@@ -67,16 +101,19 @@ option {
 	font-size: 14px;
 }
 
-.table-container{
-	height: 10em;
+.table-container {
+	height: 5%;
 	display: flex;
-	align-items: center;
-	justify-content: center
-	width: 80%;
+	align-items: center;2
+	width:80%;
+	position: inherit;
 }
 
-div.table-container table{
-	margin: 10%;
+div.table-container table {
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 5%;
+	border: 1px solid gray;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
@@ -86,14 +123,6 @@ div.table-container table{
 		padding-bottom: 5%;
 	}
 
-}
-
-/*Medium devices (tablets, 768px and up)*/
-@media (min-width:768px) {
-}
-
-/*Large devices (desktops, 992px and up)*/
-@media (min-width:992px) {
 }
 
 /*Extra large devices (large desktops, 1200px and up)*/
@@ -106,32 +135,9 @@ div.table-container table{
 	input[type=text],
 	input[type="password"],
 	input[type="email"],
-	option {t
+	option {
+		t
 		font-size: 16px;
 	}
 
-}
-
-.div-login{
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	position: relative;
-	top: 200px;
-	width: 100%;
-	margin: 0px;
-}
-
-.div-login-child{
-	width: 50%;
-	display: flex;
-	align-content: center;
-	justify-content: center;
-	padding: 20px;
-	border: 1px solid #c9c9c9;
-	background-color: #ffffff;
-	border-radius: 2.5%;
-	-webkit-box-shadow: 21px 25px 55px -23px rgba(125,120,125,0.99);
--moz-box-shadow: 21px 25px 55px -23px rgba(125,120,125,0.99);
-box-shadow: 21px 25px 55px -23px rgba(125,120,125,0.99);
 }

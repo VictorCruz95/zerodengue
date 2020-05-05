@@ -22,8 +22,6 @@ class Login extends CI_Controller {
 			'logged' => TRUE
 		);
 
-
-		// $this->load->view('home');
 		$this->session->set_userdata($userdata);
 		redirect('Home');
 

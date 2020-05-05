@@ -17,6 +17,7 @@ class Monitoramento_model extends CI_Model {
 				      ,d.bairro
 				      ,d.cidade
 				      ,d.uf
+				      ,d.imagem
 				      ,d.status as status_denuncia
 				      ,d.data as data_denuncia      
 				  FROM cidadao c
@@ -38,6 +39,7 @@ class Monitoramento_model extends CI_Model {
 				      ,d.bairro
 				      ,d.cidade
 				      ,d.uf
+				      ,d.imagem
 				      ,d.status as status_denuncia
 				      ,d.data as data_denuncia      
 				  FROM cidadao c

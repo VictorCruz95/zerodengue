@@ -35,11 +35,11 @@ class Denuncia_model extends CI_Model {
 		return $query;
 	}	
 
-	public function insert(){
+	public function insert($id_cidadao){
 		
 	  	$post = $this->input->post();
 
-		$this->id_cidadao  = "1";
+		$this->id_cidadao  = empty($id_cidadao) ? '1' : $id_cidadao;
 	  	$this->descricao   = $post['descricao'];
 	  	$this->status 	   = "A";
 	 	$this->rua 		   = $post['rua'];
@@ -55,6 +55,15 @@ class Denuncia_model extends CI_Model {
 	  	$this->id_denuncia = $this->db->insert_id();	   	
 	  	
 	  	return $this->id_denuncia;	
+
+	}
+
+	public function setImagem($id_denuncia, $nomeImagem){
+
+		$this->db->set('imagem', $nomeImagem);
+		$this->db->where('id_denuncia', $id_denuncia);
+		
+		$this->db->update('denuncia');
 
 	}
 	

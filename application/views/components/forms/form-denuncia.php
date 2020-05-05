@@ -101,7 +101,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
 					<div class="form-group col-md-8">
 						<div class="file-upload-wrapper">
-							<label for="imagem">Upload de Imagem</label>
+							<label for="foto">Upload de Imagem</label>
 							<input type="file" name="imagem" class="file-upload" accept="image/png, image/jpeg" />
 						</div>
 					</div>
