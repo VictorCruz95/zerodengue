@@ -116,6 +116,15 @@ div.table-container table {
 	border: 1px solid gray;
 }
 
+div.table-container table th,td{
+	text-align: center;
+}
+
+div.table-container table td{
+	border-color: #bfbfbf;
+	font-size: 0.65rem;
+}
+
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width:576px) {
 	.form {

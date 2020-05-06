@@ -49,7 +49,7 @@ class Denuncia_model extends CI_Model {
 	  	$this->cidade 	   = $post['cidade'];
 	  	$this->uf 	   	   = $post['uf'];
 	  	$this->cep 		   = $post['cep'];
-	  	$this->data = time();
+	  	$this->data = date ("Y-m-d H:i:s", time());
 
 	  	$this->db->insert('denuncia', $this);	
 	  	$this->id_denuncia = $this->db->insert_id();	   	

@@ -9,7 +9,6 @@ class Denuncia extends CI_Controller {
 
     var $msg;
     var $imageName;
-    var $id_cidadao;
 
 	public function index()
 	{				
@@ -156,7 +155,8 @@ class Denuncia extends CI_Controller {
 	public function insert()
 	{
 		$this->load->model('Denuncia_model', 'denuncia');
-		$id_denuncia = $this->denuncia->insert($this->id_cidadao);
+		// $this->uri->segment(3)
+		$id_denuncia = $this->denuncia->insert(1);
 		return $id_denuncia;
 	}	
 
