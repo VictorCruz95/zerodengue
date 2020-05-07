@@ -1,5 +1,5 @@
 .nav {
-	font-size: 8vw;
+	font-size: 8vw
 }
 
 div.footer_ {
@@ -11,19 +11,19 @@ div.footer_ {
 	font-size: 18px;
 	text-align: center;
 	margin: 0;
-	align-content: center;
+	align-content: center
 }
 
 .form {
 	width: 100%;
-	padding-bottom: 50px;
+	padding-bottom: 50px
 }
 
 div.form_ {
 	width: 100%;
 	align-items: center;
 	justify-content: center;
-	display: flex;
+	display: flex
 }
 
 div.form_ {
@@ -31,7 +31,7 @@ div.form_ {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: center
 }
 
 .box {
@@ -40,7 +40,7 @@ div.form_ {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
-	opacity: 0.9;
+	opacity: 0.9
 }
 
 .card {
@@ -48,7 +48,7 @@ div.form_ {
 	cursor: pointer;
 	border-radius: 15px;
 	padding: 5%;
-	flex: 1;
+	flex: 1
 }
 
 .card:hover {
@@ -57,11 +57,11 @@ div.form_ {
 	-moz-transition: opacity .15s ease-in-out;
 	-ms-transition: opacity .15s ease-in-out;
 	-o-transition: opacity .15s ease-in-out;
-	transition: opacity .15s ease-in-out;
+	transition: opacity .15s ease-in-out
 }
 
-.box a{
-	text-decoration: none;
+.box a {
+	text-decoration: none
 }
 
 .div-login {
@@ -71,7 +71,7 @@ div.form_ {
 	position: relative;
 	top: 200px;
 	width: 100%;
-	margin: 0px;
+	margin: 0px
 }
 
 .div-login-child {
@@ -85,68 +85,62 @@ div.form_ {
 	border-radius: 2.5%;
 	-webkit-box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99);
 	-moz-box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99);
-	box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99);
+	box-shadow: 21px 25px 55px -23px rgba(125, 120, 125, 0.99)
 }
 
 .imagem {
 	height: 200px;
 	border: 1px none rgb(0, 0, 0);
-	width: 400px;
+	width: 400px
 }
 
-input[type=text],
-input[type="password"],
-input[type="email"]
+input[type=text], input[type="password"], input[type="email"]
 option {
-	font-size: 14px;
+	font-size: 14px
 }
 
 .table-container {
 	height: 5%;
 	display: flex;
-	align-items: center;2
-	width:80%;
-	position: inherit;
+	align-items: center;
+	2
+	width: 80%;
+	position: inherit
 }
 
 div.table-container table {
 	margin-left: 2%;
 	margin-right: 2%;
 	margin-bottom: 5%;
-	border: 1px solid gray;
+	border: 1px solid gray
 }
 
-div.table-container table th,td{
-	text-align: center;
+div.table-container table th, td {
+	text-align: center
 }
 
-div.table-container table td{
+div.table-container table td {
 	border-color: #bfbfbf;
-	font-size: 0.65rem;
+	font-size: 0.65rem
 }
 
-/*Small devices (landscape phones, 576px and up)*/
 @media (min-width:576px) {
 	.form {
 		width: 100%;
-		padding-bottom: 5%;
+		padding-bottom: 5%
 	}
 
 }
 
-/*Extra large devices (large desktops, 1200px and up)*/
 @media (min-width:1200px) {
 	.form {
 		width: 60%;
-		padding-bottom: 5%;
+		padding-bottom: 5%
 	}
 
-	input[type=text],
-	input[type="password"],
-	input[type="email"],
-	option {
+	input[type=text], input[type="password"], input[type="email"], option {
 		t
-		font-size: 16px;
+		font-size: 16px
 	}
 
 }

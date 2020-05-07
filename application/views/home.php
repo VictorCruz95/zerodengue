@@ -8,26 +8,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" >
 		<link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
 		<style>
-			.body_{
+			.main_{
 				background-image: url('https://cmscientifica.com.br/wp-content/uploads/2020/01/Kit-recentemente-registrado-na-Anvisa-gera-inova%C3%A7%C3%A3o-na-capacidade-de-diagn%C3%B3stico-de-doen%C3%A7as-como-dengue-zika-e-chikungunya.jpg');
 				background-repeat: no-repeat;
 				background-size: 100% 100%;
-				height: 100%;
-				padding: 1%;
+				height: 120%;
+								padding: 1%;
 			}
-
 			.container_{
 				opacity: 0.75;
 			}
-
 		</style>
 	</head>
-	<body>
+	<body style="">
 		<?php
 			$dados['active_tab'] = 'home';
 			$this->load->view('components/templates/header', $dados);
 		?>
-		<div class="body_">
+		<div class="main_">
 			<br>
 			<div class="container container_">
 				<div class="jumbotron">
@@ -48,10 +46,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="container box">
 				<a style="display:block" href="<?php echo base_url(); ?>index.php/Cidadao/">
-					<div class="card text-white bg-primary mb-3" style="max-width: 20rem;">
+					<div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
 						<div class="card-header">Cadastro de Cidadão</div>
 						<div class="card-body">
-							<p class="card-text">Faça seu cadastro para ter acesso ao portal e realizar denuncias</p>
+							<p class="card-text">Cadastre-se para ter acesso ao portal e realizar denuncias</p>
 						</div>
 					</div>
 				</a>
@@ -65,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</a>
 				<a style="display:block" href="<?php echo base_url(); ?>index.php/Monitoramento/">
-					<div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+					<div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
 						<div class="card-header">Monitorar Denúncias</div>
 						<div class="card-body">
 							<p class="card-text">Consulte aqui situação em tempo real das denuncias feitas.</p>

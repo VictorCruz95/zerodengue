@@ -16,62 +16,58 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="email"  class="col-sm-2 col-form-label">Email</label>
+						<div class="form-group col-md-4">
+							<label for="email"  class="col-sm-4 col-form-label">Email</label>
 							<input type="email" class="form-control text-lowercase" name="email" placeholder="name@example.com" value="<?php echo (!empty($email) ? $email : ""); ?>">
 						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="senha" class="col-sm-2 col-form-label">Senha</label>
+					
+						<div class="form-group col-md-4">
+							<label for="senha" class="col-sm-4 col-form-label">Senha</label>
 							<input type="password" class="form-control" name="senha" placeholder="Senha" value="<?php echo (!empty($senha) ? $senha : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="rg" class="col-sm-2 col-form-label">RG</label>
+						<div class="form-group col-md-4">
+							<label for="rg" class="col-sm-4 col-form-label">RG</label>
 							<input type="number" class="form-control" name="rg" placeholder="Seu RG. Exemplo: 9999999999" value="<?php echo (!empty($rg) ? $rg : ""); ?>">
 						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="cpf" class="col-sm-2 col-form-label">CPF</label>
+					
+						<div class="form-group col-md-4">
+							<label for="cpf" class="col-sm-4 col-form-label">CPF</label>
 							<input type="text" class="form-control" name="cpf" placeholder="Seu CPF. Exemplo: 022.222.222-09" value="<?php echo (!empty($cpf) ? $cpf : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="telefone" class="col-sm-2 col-form-label">Telefone</label>
+						<div class="form-group col-md-4">
+							<label for="telefone" class="col-sm-4 col-form-label">Telefone</label>
 							<input type="text" class="form-control" name="telefone" placeholder="" value="<?php echo (!empty($telefone) ? $telefone : ""); ?>">
 						</div>
-					</div>
-					
-					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="cep" class="col-sm-2 col-form-label">CEP</label>
+
+						<div class="form-group col-md-4">
+							<label for="cep" class="col-sm-4 col-form-label">CEP</label>
 							<input type="text" class="form-control" name="cep" placeholder="Seu CEP. Exemplo: 93800-000" value="<?php echo (!empty($cep) ? $cep : ""); ?>">
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="rua" class="col-sm-2 col-form-label">Rua</label>
+						<div class="form-group col-md-6">
+							<label for="rua" class="col-sm-6 col-form-label">Rua</label>
 							<input type="text" class="form-control text-uppercase" name="rua" placeholder="" value="<?php echo (!empty($rua) ? $rua : ""); ?>">
 						</div>
-					</div>
-					<div class="form-row">
+					
 						<div class="form-group col-md-2">
 							<label for="numero" class="col-sm-2 col-form-label">Nº</label>
 							<input type="text" class="form-control" name="numero" placeholder="" value="<?php echo (!empty($numero) ? $numero : ""); ?>">
 						</div>
-						
-						<div class="form-group col-md-6">
-							<label for="complemento" class="col-sm-2 col-form-label">Complemento</label>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group col-md-3">
+							<label for="complemento" class="col-sm-3 col-form-label">Complemento</label>
 							<input type="text" class="form-control text-uppercase" name="complemento" size="30" placeholder="" value="<?php (!empty($complemento) ? $complemento : ""); ?>">
 						</div>
-					</div>
-					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
+	
+						<div class="form-group col-md-5">
+							<label for="bairro" class="col-sm-5 col-form-label">Bairro</label>
 							<input type="text" class="form-control text-uppercase"  name="bairro" placeholder="" value="<?php echo (!empty($bairro) ? $bairro : ""); ?>">
 						</div>
 					</div>

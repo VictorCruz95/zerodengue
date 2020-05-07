@@ -41,9 +41,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="bairro" class="col-sm-2 col-form-label">Bairro</label>
+						<div class="form-group col-md-4">
+							<label for="bairro" class="col-sm-4 col-form-label">Bairro</label>
 							<input type="text" class="form-control text-uppercase" name="bairro" value="<?php echo set_value('bairro'); ?>">
+						</div>
+
+						<div class="form-group col-md-4">
+							<label for="cep" class="col-sm-4 col-form-label">CEP</label>
+							<input type="text" class="form-control" name="cep" placeholder="Seu CEP. Exemplo: 93800-000" value="<?php echo set_value('cep'); ?>">
 						</div>
 					</div>
 					<div class="form-row">
@@ -86,12 +91,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</select>
 						</div>
 					</div>
-					<div class="form-row">
-						<div class="form-group col-md-8">
-							<label for="cep" class="col-sm-2 col-form-label">CEP</label>
-							<input type="text" class="form-control" name="cep" placeholder="Seu CEP. Exemplo: 93800-000" value="<?php echo set_value('cep'); ?>">
-						</div>
-					</div>
+					
 					</br>
 					<legend class="col-md-8">Informações Adicionais</legend>
 					<div class="form-group col-md-8">

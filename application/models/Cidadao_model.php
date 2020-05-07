@@ -61,8 +61,4 @@ class Cidadao_model extends CI_Model {
 
 	}
 
-	// public function delete()
-	// {
-
-
 }
